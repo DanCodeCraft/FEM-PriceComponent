@@ -1,0 +1,157 @@
+/* VARIABLES */
+:root {
+  /* Main Colors */
+  --cyan: hsl(179, 62%, 43%);
+  --cyanbright: hsla(179, 74%, 44%, 0.879);
+  --yellow: hsl(71, 73%, 54%);
+  /* Neutral Colors */
+  --gray: hsl(204, 43%, 93%);
+  --gray--font: hsla(181, 81%, 79%, 0.733);
+  --grayblue: hsl(218, 22%, 67%);
+  --white: hsl(0, 0%, 100%);
+  /* Font Weight */
+  --fw-medium: 400;
+  --fw-heavy: 700;
+}
+
+/* GENERAL */
+html {
+  background-color: var(--gray);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  font-family: "Karla", sans-serif;
+}
+
+/* STYLING */
+.container {
+  margin-bottom: 1.2rem;
+  max-width: 650px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* TOP */
+.join__container {
+  padding: 2.2rem;
+  background-color: var(--white);
+}
+
+.join__title {
+  font-size: 1.5rem;
+  color: var(--cyan);
+  margin-bottom: 1.2rem;
+}
+
+.join__header {
+  color: var(--yellow);
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.join__description {
+  color: var(--grayblue);
+  font-weight: var(--fw-medium);
+  /* margin-bottom: 0.6rem; */
+}
+
+/* BOTTOM */
+.bottom__container {
+  display: flex;
+}
+
+.title {
+  color: var(--gray);
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+/* SUBSCRIPTION BOX */
+.month_subscription {
+  padding: 2rem;
+  background-color: var(--cyan);
+  width: 50%;
+}
+
+.month__price {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  color: var(--gray--font);
+  font-weight: var(--fw-medium);
+  gap: 1.2rem;
+}
+
+.month__amount {
+  font-size: 2rem;
+  font-weight: var(--fw-heavy);
+  color: var(--white);
+}
+
+.month__desc {
+  color: var(--gray);
+  margin-bottom: 1.8rem;
+}
+
+.sign-up__button {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--yellow);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: var(--fw-heavy);
+  padding: 12px;
+  border-radius: 4px;
+
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* PERKS BOX */
+.why {
+  padding: 2rem;
+  background-color: var(--cyanbright);
+  width: 50%;
+}
+
+.perks__list {
+  padding: 0;
+  margin: 0;
+}
+
+.perks {
+  list-style-type: none;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+/* FOOTER */
+.footer {
+  font-size: 0.8rem;
+  color: var(--cyan);
+}
+
+/* MEDIA QUERY */
+@media (max-width: 29em) {
+  .container {
+    margin: 1rem;
+  }
+
+  .bottom__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .month_subscription,
+  .why {
+    width: 100%;
+  }
+}
